@@ -1,15 +1,16 @@
 package view;
 
-import java.util.Scanner;
+import model.service.Entrada;
 
 public class MenuConverter {
 
-    public static void menu(){
-        Scanner sc = new Scanner(System.in);
+    public static int menu(){
 
-        System.out.printf("Conversão de ");
+        System.out.printf("=== Conversor CV para kW ===\n\n");
         System.out.printf("Insira o valor: ");
 
+        int valor = Entrada.pedirIntValidado();
+        return valor;
     }
 
 }
